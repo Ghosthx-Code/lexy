@@ -3,12 +3,13 @@ A high speed lexer lib
 
 ## Uses
 ```rust
+#[derive(Debug, Clone, Copy)]
 enum TokenKind {
   Print,
   SemiColon,
 }
 impl lexy::Token for TokenKind {
-  fn assign() -> Vec<(Self, &'static [u8])> {
+  fn assign_tokens() -> Vec<(Self, &'static [u8])> {
     vec![
       (TokenKind::Print, b"print"),
       (TokenKind::SemiColon, b";"),
