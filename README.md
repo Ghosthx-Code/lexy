@@ -21,7 +21,7 @@ fn main() {
   let source = b"
     print \"Hello lexy\";
   ";
-  let tokens = lexy::Lexer<TokenKind>::new(source).scan_tokens();
+  let tokens = lexy::Lexer::<TokenKind>::new(source).scan_tokens();
   println!("{:#?}", tokens);
 }
 ```
