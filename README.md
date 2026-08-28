@@ -26,3 +26,9 @@ fn main() {
 }
 ```
 Strings, Id, Int, Float, Char, are auto lexed
+## To Get Strings, Id, Int, Float, Char
+```rust
+fn main() {
+  lexy::RuleItem::Id; // ::String, ::Int, ::Float, ::Char
+}
+```
